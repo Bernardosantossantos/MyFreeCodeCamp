@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lan="utf-8">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario web</title>
+  </head>
+<body>
+  <div class="container">
+    <header class="header">
+  <h1 id="title" class="text-center">Formulario web de inscripción</h1>
+    <p id="description" class="description text-center">Debes llenar este formulario para poder enviar la solicitud de inscripción</p>
+    </header>
+<form id="survey-form">
+  <div class="form-group">
+  <label id="name-label" forn="name">Nombre</label>
+    <input class="form-control" name="name" id="name" type="text" required placeholder="Entre su nombre">
+  </div>
+  <div class="form-group">
+  <label id="email-label" forn="email">Email </label>
+  <input class="form-control" name="email" id="email" type="text" required placeholder="Entre su Email">
+  </div>
+  <div class="form-group">
+  <label id="number-label" forn="number">Edad<span class="clue">(Optional)</span></label> <input class="form-control" name="number" id="number" type="number" required placeholder="age" min="10" max="100">
+  </div>
+  <div>
+    <p>Escoge una opción</p>
+  <select id="dropdown" name="role" class="form-control" required>
+    <option disable select value>Elige aqui</option>
+    <option>Yes</option>
+    <option>No</option>
+  </select>
+  </div>
+  <div class="form-group">
+    <p>Recomendarias un amigo</p>
+  <label><input name="user-recomend" type="radio" value="definitivo" class="input-radio" checked>Definitivamente</label>
+  <label><input name="user-recomend" type="radio" value="talves" class="input-radio" checked>Talves</label>
+   <label><input name="user-recomend" type="radio" value="no" class="input-radio" checked>No</label>
+  </div>
+  <div class="form-group">
+    <p>Cual de estas profesiones quieres
+      <span class="clue">(Debes selecionar una)</span>
+    </p>
+  <label><input type="checkbox" value="Desarrolador Web" name="prefer" class="input-checkbox">Desarrollador Web</label>
+  <label><input type="checkbox" value="Disellador Web" name="prefer" class="input-checkbox">Diseñador Web</label>
+  <label><input type="checkbox" value="Frond End" name="prefer" class="input-checkbox">Frond End</label>
+  <label><input type="checkbox" value="Desarrolador Banck End" name="prefer" class="input-checkbox">Desarrollador Back End</label>
+  <label><input type="checkbox" value="Programador" name="prefer" class="input-checkbox">Programador Web</label>
+  </div>
+  <div class="form-group">
+    <p>Dejanos un comentario</p>
+  <textarea id="comments" class="input-textarea" name="comment" placeholder="Aqui tu comentario...">
+  </textarea>
+  </div>
+  <div class="form-group">
+<button type="submit" id="submit" class="submit-button" > Submit</button>
+</div>
+</form>
+</div>
+</body>
+</hmtl>
